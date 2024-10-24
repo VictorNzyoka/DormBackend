@@ -2,12 +2,7 @@ const { Sequelize } = require('sequelize');
 require('dotenv').config(); 
 
 // Create a new Sequelize instance with the connection parameters
-const sequelize = new Sequelize(process.env.DATABASE_URL, {
-  // username: 'postgres',          
-  // host: 'localhost',             
-  // database: 'dorm',              
-  // password: 'Kethi@21?',         
-  // port: 5432,                    
+const sequelize = new Sequelize(process.env.DATABASE_URL, {                   
   dialect: 'postgres',           
   // logging: false,                
   dialectOptions: {
